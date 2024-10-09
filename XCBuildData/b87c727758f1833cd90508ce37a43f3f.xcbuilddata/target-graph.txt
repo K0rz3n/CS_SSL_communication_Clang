@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-Target 'openssl_s' in project 'openssl_cs' (no dependencies)
-Target 'openssl_c' in project 'openssl_cs' (no dependencies)
