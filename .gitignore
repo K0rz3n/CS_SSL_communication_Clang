@@ -3,3 +3,5 @@ openssl_cs.xcodeproj/
 other/
 XCBuildData/
 *.entitlements
+openssl_c/build/
+openssl_s/build/
