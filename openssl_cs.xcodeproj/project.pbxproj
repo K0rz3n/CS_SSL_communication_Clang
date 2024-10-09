@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A39D30F2CB0B60B00071029 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D30E2CB0B60B00071029 /* main.c */; };
+		4A39D31D2CB0B76500071029 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D31C2CB0B76500071029 /* main.c */; };
+		4A39D3272CB1411A00071029 /* socket_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D3262CB1411A00071029 /* socket_c.c */; };
+		4A39D3292CB15A2D00071029 /* socket_s.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D3232CB1410200071029 /* socket_s.c */; };
+		4A39D32A2CB15A2D00071029 /* socket_s.h in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D3282CB1546500071029 /* socket_s.h */; };
+		4A39D3302CB31D1D00071029 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D32F2CB31D1D00071029 /* makefile */; };
+		4A39D3312CB31D1D00071029 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4A39D32F2CB31D1D00071029 /* makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A39D3092CB0B60B00071029 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4A39D3182CB0B76500071029 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A39D30B2CB0B60B00071029 /* openssl_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openssl_c; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39D30E2CB0B60B00071029 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4A39D3152CB0B74D00071029 /* openssl_c.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openssl_c.entitlements; sourceTree = "<group>"; };
+		4A39D31A2CB0B76500071029 /* openssl_s */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openssl_s; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39D31C2CB0B76500071029 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4A39D3212CB0B76D00071029 /* openssl_s.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openssl_s.entitlements; sourceTree = "<group>"; };
+		4A39D3232CB1410200071029 /* socket_s.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = socket_s.c; path = openssl_s/socket_s.c; sourceTree = SOURCE_ROOT; };
+		4A39D3262CB1411A00071029 /* socket_c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = socket_c.c; sourceTree = "<group>"; };
+		4A39D3282CB1546500071029 /* socket_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket_s.h; sourceTree = "<group>"; };
+		4A39D32B2CB1646E00071029 /* socket_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket_c.h; sourceTree = "<group>"; };
+		4A39D32C2CB2984F00071029 /* ca.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.crt; sourceTree = "<group>"; };
+		4A39D32D2CB2997800071029 /* server.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server.key; sourceTree = "<group>"; };
+		4A39D32E2CB2997800071029 /* server.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server.crt; sourceTree = "<group>"; };
+		4A39D32F2CB31D1D00071029 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A39D3082CB0B60B00071029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39D3172CB0B76500071029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A39D3022CB0B60B00071029 = {
+			isa = PBXGroup;
+			children = (
+				4A39D32F2CB31D1D00071029 /* makefile */,
+				4A39D30D2CB0B60B00071029 /* openssl_c */,
+				4A39D31B2CB0B76500071029 /* openssl_s */,
+				4A39D30C2CB0B60B00071029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A39D30C2CB0B60B00071029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A39D30B2CB0B60B00071029 /* openssl_c */,
+				4A39D31A2CB0B76500071029 /* openssl_s */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A39D30D2CB0B60B00071029 /* openssl_c */ = {
+			isa = PBXGroup;
+			children = (
+				4A39D32C2CB2984F00071029 /* ca.crt */,
+				4A39D3152CB0B74D00071029 /* openssl_c.entitlements */,
+				4A39D30E2CB0B60B00071029 /* main.c */,
+				4A39D3262CB1411A00071029 /* socket_c.c */,
+				4A39D32B2CB1646E00071029 /* socket_c.h */,
+			);
+			path = openssl_c;
+			sourceTree = "<group>";
+		};
+		4A39D31B2CB0B76500071029 /* openssl_s */ = {
+			isa = PBXGroup;
+			children = (
+				4A39D32E2CB2997800071029 /* server.crt */,
+				4A39D32D2CB2997800071029 /* server.key */,
+				4A39D3232CB1410200071029 /* socket_s.c */,
+				4A39D3212CB0B76D00071029 /* openssl_s.entitlements */,
+				4A39D31C2CB0B76500071029 /* main.c */,
+				4A39D3282CB1546500071029 /* socket_s.h */,
+			);
+			path = openssl_s;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A39D30A2CB0B60B00071029 /* openssl_c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A39D3122CB0B60B00071029 /* Build configuration list for PBXNativeTarget "openssl_c" */;
+			buildPhases = (
+				4A39D3072CB0B60B00071029 /* Sources */,
+				4A39D3082CB0B60B00071029 /* Frameworks */,
+				4A39D3092CB0B60B00071029 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openssl_c;
+			productName = openssl_cs;
+			productReference = 4A39D30B2CB0B60B00071029 /* openssl_c */;
+			productType = "com.apple.product-type.tool";
+		};
+		4A39D3192CB0B76500071029 /* openssl_s */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A39D31E2CB0B76500071029 /* Build configuration list for PBXNativeTarget "openssl_s" */;
+			buildPhases = (
+				4A39D3162CB0B76500071029 /* Sources */,
+				4A39D3172CB0B76500071029 /* Frameworks */,
+				4A39D3182CB0B76500071029 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openssl_s;
+			productName = openssl_s;
+			productReference = 4A39D31A2CB0B76500071029 /* openssl_s */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A39D3032CB0B60B00071029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4A39D30A2CB0B60B00071029 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4A39D3192CB0B76500071029 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 4A39D3062CB0B60B00071029 /* Build configuration list for PBXProject "openssl_cs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A39D3022CB0B60B00071029;
+			productRefGroup = 4A39D30C2CB0B60B00071029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A39D30A2CB0B60B00071029 /* openssl_c */,
+				4A39D3192CB0B76500071029 /* openssl_s */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A39D3072CB0B60B00071029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39D3272CB1411A00071029 /* socket_c.c in Sources */,
+				4A39D30F2CB0B60B00071029 /* main.c in Sources */,
+				4A39D3302CB31D1D00071029 /* makefile in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39D3162CB0B76500071029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39D3292CB15A2D00071029 /* socket_s.c in Sources */,
+				4A39D32A2CB15A2D00071029 /* socket_s.h in Sources */,
+				4A39D3312CB31D1D00071029 /* makefile in Sources */,
+				4A39D31D2CB0B76500071029 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A39D3102CB0B60B00071029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/opt/homebrew/opt/openssl@3/include/**";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/opt/homebrew/opt/openssl@3/lib/**";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lssl",
+					"-lcrypto",
+				);
+				SDKROOT = macosx;
+				SYMROOT = "";
+			};
+			name = Debug;
+		};
+		4A39D3112CB0B60B00071029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/opt/homebrew/opt/openssl@3/include/**";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/opt/homebrew/opt/openssl@3/lib/**";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lssl",
+					"-lcrypto",
+				);
+				SDKROOT = macosx;
+				SYMROOT = "";
+			};
+			name = Release;
+		};
+		4A39D3132CB0B60B00071029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = openssl_c/openssl_c.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R57C94W3V3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/openssl_c/build";
+			};
+			name = Debug;
+		};
+		4A39D3142CB0B60B00071029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = openssl_c/openssl_c.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R57C94W3V3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/openssl_c/build";
+			};
+			name = Release;
+		};
+		4A39D31F2CB0B76500071029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = openssl_s/openssl_s.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R57C94W3V3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/openssl_s/build";
+			};
+			name = Debug;
+		};
+		4A39D3202CB0B76500071029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = openssl_s/openssl_s.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R57C94W3V3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/openssl_s/build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A39D3062CB0B60B00071029 /* Build configuration list for PBXProject "openssl_cs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A39D3102CB0B60B00071029 /* Debug */,
+				4A39D3112CB0B60B00071029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A39D3122CB0B60B00071029 /* Build configuration list for PBXNativeTarget "openssl_c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A39D3132CB0B60B00071029 /* Debug */,
+				4A39D3142CB0B60B00071029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A39D31E2CB0B76500071029 /* Build configuration list for PBXNativeTarget "openssl_s" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A39D31F2CB0B76500071029 /* Debug */,
+				4A39D3202CB0B76500071029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A39D3032CB0B60B00071029 /* Project object */;
+}
