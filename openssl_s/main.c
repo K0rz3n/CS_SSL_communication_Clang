@@ -152,10 +152,10 @@ int getargs(int argc, char **argv, char **crt_value, char **key_value, int* port
     if(key_option+crt_option+port_option !=3){
         printf("Miss some options:\n");
         if(key_option == 0){
-            printf("--key/-k <secret key file path>\n");
+            printf("--key/-k <server secret key file path>\n");
         }
         if(crt_option == 0){
-            printf("--crt/-c <certificate file path>\n");
+            printf("--crt/-c <server certificate file path>\n");
         }
         if(port_option == 0){
             printf("--port/-p <listening port>\n");

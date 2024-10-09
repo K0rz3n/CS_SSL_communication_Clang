@@ -152,13 +152,13 @@ int getargs(int argc, char **argv, char **crt_value, char** dst_value, int* port
     if(crt_option+dst_option+port_option != 3){
         printf("Miss some options:\n");
         if(crt_option == 0){
-            printf("--crt/-c <certificate file path>\n");
+            printf("--crt/-c <CA certificate file path>\n");
         }
         if(dst_option == 0){
-            printf("--dst/-d <target address>\n");
+            printf("--dst/-d <target server address>\n");
         }
         if(port_option == 0){
-            printf("--port/-p <target port>\n");
+            printf("--port/-p <target server port>\n");
         }
         return 1;
     }

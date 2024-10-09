@@ -11,10 +11,10 @@ Specifically, it implements the following functions:
 Features:  
 
 - SSL encryption based on OpenSSL 3.x library and TLSv1.3
-- Choose the cipher suite TLS_AES_256_GCM_SHA384 in TLSv1.3
+- Strong cipher suite TLS_AES_256_GCM_SHA384 in TLSv1.3
 - Customizing the certification path
 - Customizing the IP address and port
-- Good error handling
+- Prime error handling and annotation
 
 ## Project Structure
 ```
@@ -50,8 +50,8 @@ Features:
 
 
 ## Dependencies
-- System: linux or mac 
-- Library: openssl 3.x 
+- System: Linux or MacOS
+- Library: OpenSSL 3.x 
 
 ## Basic command
 
@@ -78,8 +78,22 @@ cd build
 
 [run client]
 cd build
-./client --crt <ca.crt path> --dst/-d <target ipv4 address> --port/-p <target port>
+./client --crt/-c <ca.crt path> --dst/-d <target ipv4 address> --port/-p <target port>
 ```
+
+For example
+
+```
+[run server] 
+cd build 
+./server -k server.key -c server.crt -p 4433
+
+[run client]
+cd build
+./client -c ca.crt -d 127.0.0.1 -p 4433
+```
+
+
 ### Build Clean
 ```
 make clean
