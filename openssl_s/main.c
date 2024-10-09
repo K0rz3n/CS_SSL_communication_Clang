@@ -8,19 +8,21 @@
 
 #define INITIAL_BUFFER_SIZE 1024
 
+// ssl initialization
 void init_openssl(void) {
     OPENSSL_init_ssl(0, NULL);
     SSL_load_error_strings();
     OpenSSL_add_ssl_algorithms();
 }
 
+// ssl recycling
 void cleanup_openssl(void) {
     EVP_cleanup();
 }
 
 
 
-
+// unified resources recycling
 void cleanup_resources(SSL *ssl, int server_fd, int real_socket,  char *buffer, SSL_CTX *ctx) {
     if (ssl) {
         SSL_shutdown(ssl);
@@ -42,7 +44,7 @@ void cleanup_resources(SSL *ssl, int server_fd, int real_socket,  char *buffer, 
     cleanup_openssl();
 }
 
-
+// get ssl status
 void ssl_info_callback(const SSL *ssl, int where, int ret)
 {
     const char *str = NULL;
@@ -74,7 +76,7 @@ void ssl_info_callback(const SSL *ssl, int where, int ret)
 }
 
 
-
+// create ssl ctx
 SSL_CTX *create_server_context(void) {
     const SSL_METHOD *method;
     SSL_CTX *ctx = NULL;
@@ -89,6 +91,7 @@ SSL_CTX *create_server_context(void) {
     return ctx;
 }
 
+// configure ctx and load certificate
 void configure_server_context(SSL_CTX *ctx, char* cert_addr, char* key_addr) {
     // load server side certificate and private key
     if (SSL_CTX_use_certificate_file(ctx, cert_addr, SSL_FILETYPE_PEM) <= 0) {
@@ -104,6 +107,7 @@ void configure_server_context(SSL_CTX *ctx, char* cert_addr, char* key_addr) {
     }
 }
 
+// resolve parameters
 int getargs(int argc, char **argv, char **crt_value, char **key_value, int* port_value){
     
     int opt;
@@ -228,7 +232,7 @@ int main(int argc, char **argv) {
             cleanup_resources(ssl, server_fd, real_socket, buffer, ctx);
             exit(EXIT_FAILURE);
         }
-        
+        // resolve the client address and port
         inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
         int client_port = ntohs(client_addr.sin_port);
         printf("New connection from: %s:%d\n", client_ip, client_port);
@@ -258,6 +262,8 @@ int main(int argc, char **argv) {
             size_t total_received = 0;
             
             while (1) {
+                
+                // accept message from client
                 ssize_t received_size = SSL_read(ssl, buffer + total_received, (int)(buffer_size - total_received - 1));
                 if (received_size < 0) {
                     printf("Recv failed\n");
@@ -292,7 +298,7 @@ int main(int argc, char **argv) {
                 printf("\nMessage of %d words has beed received: %s\n",(int)received_size,buffer+received_temp);
                 printf("Acknowledge message was sent to client\n");
             }
-            // Close connection
+            // Close connection and recover partial variables
             SSL_shutdown(ssl);
             SSL_free(ssl);
             close(real_socket);

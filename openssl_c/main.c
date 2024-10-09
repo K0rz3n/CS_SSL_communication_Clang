@@ -9,16 +9,19 @@
 #define BUFFER_SIZE 1024
 #define CIPHER_SUITE "TLS_AES_256_GCM_SHA384"
 
+// ssl initialization
 void init_openssl(void) {
     OPENSSL_init_ssl(0, NULL);
     SSL_load_error_strings();
     OpenSSL_add_ssl_algorithms();
 }
 
+// ssl recycling
 void cleanup_openssl(void) {
     EVP_cleanup();
 }
 
+// unified resources recycling
 void cleanup_resources(SSL *ssl, int real_socket, SSL_CTX *ctx, char *line) {
     if (ssl) {
         SSL_shutdown(ssl);
@@ -36,6 +39,7 @@ void cleanup_resources(SSL *ssl, int real_socket, SSL_CTX *ctx, char *line) {
     cleanup_openssl();
 }
 
+// gain ssl status
 void ssl_info_callback(const SSL *ssl, int where, int ret)
 {
     const char *str = NULL;
@@ -103,7 +107,7 @@ void configure_client_context(SSL_CTX *ctx, char* cert_addr) {
     cipher_suite_choose(ctx, CIPHER_SUITE);
 }
 
-
+// resolve parameters
 int getargs(int argc, char **argv, char **crt_value, char** dst_value, int* port_value){
     
     int opt;
@@ -228,7 +232,7 @@ int main(int argc, char** argv) {
             }
             printf("Message of %d words sent to server: %s\n",(int)strlen(line), line);
     
-            // check whether message has been received or not
+            // accept message from server to check whether message has been received or not
             memset(buffer, 0, BUFFER_SIZE);
             if (SSL_read(ssl, buffer, BUFFER_SIZE) == 0) {
                 printf("Server disconnected\n");
