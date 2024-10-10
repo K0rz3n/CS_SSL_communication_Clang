@@ -218,7 +218,6 @@ int main(int argc, char** argv) {
     // SSL handshake and connection
     if(SSL_connect(ssl) > 0){
         while ((read_line = getline(&line, &len, stdin)) !=-1) {
-    
             //delete the last \n in the line
             size_t input_len = strlen(line);
             if (input_len > 1 && line[input_len - 1] == '\n') {

@@ -50,8 +50,18 @@ Features:
 
 
 ## Dependencies
-- System: Linux or MacOS
-- Library: OpenSSL 3.x 
+
+1.System: Linux or MacOS
+
+2.Library: OpenSSL 3.x 
+
+Take ubuntu as an example:
+
+```
+sudo apt-get install openssl
+sudo apt-get install libssl-dev
+```
+
 
 ## Basic command
 
