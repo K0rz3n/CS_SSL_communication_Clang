@@ -62,14 +62,19 @@ sudo apt-get install openssl
 sudo apt-get install libssl-dev
 ```
 
+## Download
+
+```
+git clone https://github.com/K0rz3n/CS_SSL_communication_Clang.git
+```
 
 ## Basic command
 
-All the commands in this section are under the project folder.
+All the commands below in this section are under the project folder: _CS_SSL_communication_Clang_
 
 ### Build
 
-The binary files of server and client code will be located in the folder ./build after running the following command.
+The binary files of server and client code will be located in the folder _build_ after running the following command.
 
 ```
 make build
